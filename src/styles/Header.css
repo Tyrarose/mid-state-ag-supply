@@ -1,0 +1,166 @@
+* {
+	/* border: 1px pink dotted; */
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.nav-link {
+	color: black !important;
+	font-size: clamp(12px, 1vw, 14px);
+}
+
+.nav-item:hover {
+	background-color: #2897ff;
+}
+.nav-item:hover .nav-link {
+	color: white !important;
+}
+
+.nav-item {
+	padding: 1rem;
+	display: flex;
+	align-items: flex-end;
+}
+
+.brand-image {
+	width: auto;
+	height: 80px;
+	margin-right: 50px;
+	visibility: visible;
+}
+
+.active-link {
+	border-bottom: 3px #2897ff solid;
+}
+
+.search-bar {
+	height: 40px;
+	margin-left: 50px;
+	position: relative;
+	z-index: 1050;
+}
+
+.search-bar .form-control {
+	width: 14vw;
+	font-size: clamp(12px, 1vw, 14px);
+	transition: border-color 0.3s ease;
+}
+
+.search-bar .form-control:focus {
+	border-color: #2897ff;
+}
+
+.search-bar .btn {
+	transition: color 0.3s ease;
+	border: 1px solid #2897ff;
+	color: #2897ff;
+	transition: color 0.3s ease;
+	margin-left: 5px;
+}
+
+.search-bar .btn:hover {
+	color: white;
+	background-color: #2897ff;
+}
+
+.search-results {
+	position: absolute;
+	top: 80%;
+	right: 10%;
+	background-color: white;
+	border: 1px solid #ddd;
+	z-index: 1000;
+	max-height: 250px;
+	overflow-y: auto;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	width: 1000px;
+}
+
+.product-item {
+	border-bottom: 1px rgb(207, 207, 207) solid;
+	padding: 10px 20px 5px 5px;
+}
+
+.product-item > p {
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.highlight {
+	color: #2897ff;
+	font-weight: bold;
+}
+
+.product-item:hover {
+	background-color: #2897ff;
+	color: white;
+	cursor: pointer;
+}
+
+.product-item:hover .highlight {
+	color: white;
+	font-weight: 100;
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 767px) {
+	/* .offcanvas-end {
+		right: 0;
+	}
+
+	.offcanvas-end .offcanvas-body {
+		width: 100%;
+	}*/
+
+	.offcanvas-end .nav {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+	}
+
+	/* .navbar {
+		margin-top: 3%;
+		margin-bottom: 9%;
+	} */
+
+	/* .brand-image {
+		height: 60px;
+		padding: 0%;
+		margin-left: 2%;
+	} */
+
+	.search-bar {
+		margin-top: 14px;
+		width: 100%;
+		margin-left: 0;
+		position: relative;
+	}
+
+	.search-bar .form-control {
+		width: 100%;
+		font-size: clamp(14px, 1vw, 16px);
+	}
+
+	.search-bar .btn {
+		width: 20%;
+	}
+
+	.search-container {
+		display: flex;
+		flex-direction: column;
+		order: -1;
+		width: 100%;
+	}
+
+	.search-results {
+		width: 100%;
+		position: relative;
+		z-index: 1000;
+		left: 0;
+	}
+}

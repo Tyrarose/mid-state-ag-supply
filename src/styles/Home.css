@@ -1,0 +1,111 @@
+.container-fluid {
+	overflow: hidden;
+}
+
+.section1-home-gradient {
+	background: linear-gradient(to right, #1645ff 0%, #006de9 77%);
+	height: 400px;
+}
+
+.image-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.featured {
+	width: 120%;
+	height: auto;
+	object-fit: cover;
+	margin-left: -12%;
+}
+
+.title {
+	color: white;
+	font-family: "Malgun Gothic", sans-serif;
+	font-weight: bold;
+	font-size: 55px;
+	padding: 50px 0px 20px 0px;
+}
+
+.content {
+	color: white;
+	font-family: "Malgun Gothic", sans-serif;
+	font-size: 20px;
+	padding: 40px;
+}
+
+.line {
+	background-color: white;
+	height: 2px;
+	width: 90%;
+	margin: auto;
+}
+
+.section2 {
+	padding: 30px;
+	margin: auto;
+	padding: auto;
+}
+
+.emergency {
+	margin-bottom: 50px;
+}
+.emergency-service-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.emergency-title {
+	font-family: "Malgun Gothic", sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+}
+
+.service-title {
+	font-family: "Malgun Gothic", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.box {
+	border: 2px black solid;
+	padding: 8px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: white;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.box {
+	border: 2px black solid;
+	padding: 8px;
+	border-radius: 8px;
+}
+
+.logo-section {
+	display: flex;
+	gap: 20px;
+}
+
+.logo-section img {
+	max-height: 50px;
+}
