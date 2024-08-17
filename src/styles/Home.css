@@ -85,19 +85,18 @@
 	/* justify-content: space-between; */
 	align-items: center;
 	padding: 20px;
-	/* padding-top: 80px; */
 }
 
 .contact-info {
 	display: flex;
 	flex-direction: row;
-	gap: 20px;
+	gap: 10px;
 }
 
 .contact-item {
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 20px;
 }
 
 .box {
@@ -108,9 +107,13 @@
 
 .logo-section {
 	display: flex;
-	gap: 40px;
+	flex-direction: row;
+	flex-wrap: wrap; /* Allow images to wrap onto the next line */
+	justify-content: center; /* Center images horizontally */
+	gap: 10px; /* Maintain gap between images */
 }
 
 .logo-section img {
-	max-height: 80px;
+	max-height: 80px; /* Ensure images are not too large */
+	margin: 5px; /* Add margin to avoid images touching edges */
 }

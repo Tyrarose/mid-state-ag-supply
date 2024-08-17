@@ -52,7 +52,7 @@ function Home() {
 				</div>
 				<div className="footer-container">
 					<div className="col-lg-6 contact-info">
-						<div className="col-lg-6">
+						<div className="row">
 							<div className="contact-item">
 								<i className="fa-solid fa-clock box"></i>
 								<div>
@@ -66,7 +66,7 @@ function Home() {
 								<h6>715 - 255 - 2355</h6>
 							</div>
 						</div>
-						<div className="col-lg-6">
+						<div className="row">
 							<div className="contact-item">
 								<i className="fa-solid fa-envelope box"></i>
 								<h6>glenn.midstateagsupply@gmail.com</h6>
@@ -78,7 +78,7 @@ function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="col-l-6 logo-section">
+					<div className="logo-section">
 						<img
 							src={process.env.PUBLIC_URL + "/images/seneca.png"}
 							alt="Seneca"
