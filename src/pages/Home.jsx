@@ -56,25 +56,37 @@ function Home() {
 							<div className="contact-item">
 								<i className="fa-solid fa-clock box"></i>
 								<div>
-									<h6>Business Hours</h6>
+									<h6>
+										<strong>Business Hours</strong>
+									</h6>
 									<p>Monday to Friday</p>
 									<p>8:00 am - 5:00 pm</p>
 								</div>
 							</div>
 							<div className="contact-item">
 								<i className="fa-solid fa-phone-volume box"></i>
-								<h6>715 - 255 - 2355</h6>
+								<h6>
+									<strong>715 - 255 - 2355</strong>
+								</h6>
 							</div>
 						</div>
 						<div className="row">
 							<div className="contact-item">
 								<i className="fa-solid fa-envelope box"></i>
-								<h6>glenn.midstateagsupply@gmail.com</h6>
+								<h6>
+									<strong>
+										glenn.midstateagsupply@gmail.com
+									</strong>
+								</h6>
 							</div>
 							<br />
 							<div className="contact-item">
 								<i className="fa-solid fa-location-dot box"></i>
-								<h6>N12580 Owen Ave, Owen WI 54460</h6>
+								<h6>
+									<strong>
+										N12580 Owen Ave, Owen WI 54460
+									</strong>
+								</h6>
 							</div>
 						</div>
 					</div>

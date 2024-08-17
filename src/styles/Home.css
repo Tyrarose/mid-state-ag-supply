@@ -99,6 +99,9 @@
 	gap: 20px;
 }
 
+.contact-item > * {
+	font-family: "Inter", sans-serif;
+}
 .box {
 	border: 2px black solid;
 	padding: 10px;
