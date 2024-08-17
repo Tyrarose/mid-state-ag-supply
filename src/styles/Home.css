@@ -49,17 +49,22 @@
 }
 
 .emergency {
-	margin-bottom: 50px;
+	margin: 30px 20px;
 }
 .emergency-service-content {
 	display: flex;
 	flex-direction: column;
+	margin-left: 60px;
 }
 
 .emergency-title {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
 	font-size: 60px;
+}
+
+.ophours {
+	height: 180px;
 }
 
 .service-title {
@@ -77,10 +82,10 @@
 
 .footer-container {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
 	padding: 20px;
-	background-color: white;
+	padding-top: 80px;
 }
 
 .contact-info {
@@ -92,20 +97,20 @@
 .contact-item {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 30px;
 }
 
 .box {
 	border: 2px black solid;
-	padding: 8px;
+	padding: 10px;
 	border-radius: 8px;
 }
 
 .logo-section {
 	display: flex;
-	gap: 20px;
+	gap: 40px;
 }
 
 .logo-section img {
-	max-height: 50px;
+	max-height: 80px;
 }

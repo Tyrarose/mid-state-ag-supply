@@ -6,7 +6,7 @@ function Home() {
 	return (
 		<container className="container-fluid">
 			<section className="section1-home-gradient">
-				<div className="row overflow-hidden">
+				<div className="row">
 					<div className="col-lg-6">
 						<div className="text-center">
 							<h2 className="title">OUR MISSION</h2>
@@ -38,9 +38,9 @@ function Home() {
 			</section>
 			<section className="section2">
 				<div className="row emergency">
-					<div className="col-lg-2 text-center">
+					<div className="col-lg-1">
 						<img
-							className="24-7"
+							className="ophours"
 							src={process.env.PUBLIC_URL + "/images/24-7.png"}
 							alt="24/7"
 						/>
@@ -51,8 +51,8 @@ function Home() {
 					</div>
 				</div>
 				<div className="footer-container">
-					<div className="contact-info">
-						<div className="row">
+					<div className="col-lg-6 contact-info">
+						<div className="col-lg-6">
 							<div className="contact-item">
 								<i className="fa-solid fa-clock box"></i>
 								<div>
@@ -66,18 +66,19 @@ function Home() {
 								<h6>715 - 255 - 2355</h6>
 							</div>
 						</div>
-						<div className="row">
+						<div className="col-lg-6">
 							<div className="contact-item">
 								<i className="fa-solid fa-envelope box"></i>
 								<h6>glenn.midstateagsupply@gmail.com</h6>
 							</div>
+							<br />
 							<div className="contact-item">
 								<i className="fa-solid fa-location-dot box"></i>
 								<h6>N12580 Owen Ave, Owen WI 54460</h6>
 							</div>
 						</div>
 					</div>
-					<div className="logo-section">
+					<div className="col-l-6 logo-section">
 						<img
 							src={process.env.PUBLIC_URL + "/images/seneca.png"}
 							alt="Seneca"
