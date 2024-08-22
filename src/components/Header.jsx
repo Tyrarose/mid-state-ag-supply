@@ -10,25 +10,25 @@ import {
 	Button,
 } from "react-bootstrap";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/Header.css";
-
 import productsData from "../data/products.json";
+import "../styles/Header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function Header() {
+export default function Header() {
 	const navigate = useNavigate();
-
-	const handleClose = () => setExpanded(false);
 
 	const handleProductClick = (productId) => {
 		navigate(`/productshop?highlight=${productId}`);
-		handleClose(); // Close the offcanvas menu
-		setSearchTerm(""); // Clear the search input
-		setFilteredProducts([]); // Clear the search results
+		handleClose();
+		setSearchTerm("");
+		setFilteredProducts([]);
 	};
 
 	const [expanded, setExpanded] = useState(false);
+	const location = useLocation();
+	const isHomePage = location.pathname === "/";
+
+	const handleClose = () => setExpanded(false);
 
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filteredProducts, setFilteredProducts] = useState([]);
@@ -60,7 +60,6 @@ function Header() {
 	const highlightText = (text, highlight, maxLength = null) => {
 		if (!highlight) return text;
 
-		// Truncate the text if maxLength is specified
 		if (maxLength && text.length > maxLength) {
 			text = text.substring(0, maxLength) + "...";
 		}
@@ -82,14 +81,14 @@ function Header() {
 	return (
 		<>
 			{["md"].map((expand) => (
-				<Navbar>
+				<Navbar key={expand} expand={expand}>
 					<Container fluid>
 						<NavLink to="/">
 							<img
 								src={
 									process.env.PUBLIC_URL + "/images/logo.png"
 								}
-								alt="Mid-State AG Supply"
+								alt="fireproshield"
 								className="brand-image"
 							/>
 						</NavLink>
@@ -127,7 +126,7 @@ function Header() {
 											}
 											onClick={handleClose}
 										>
-											Home
+											HOME
 										</NavLink>
 									</NavItem>
 									<NavItem>
@@ -140,7 +139,7 @@ function Header() {
 											}
 											onClick={handleClose}
 										>
-											Products
+											PRODUCTS
 										</NavLink>
 									</NavItem>
 									<NavItem>
@@ -153,7 +152,7 @@ function Header() {
 											}
 											onClick={handleClose}
 										>
-											Contact Us
+											CONTACT US
 										</NavLink>
 									</NavItem>
 									<NavItem>
@@ -166,7 +165,7 @@ function Header() {
 											}
 											onClick={handleClose}
 										>
-											Gallery
+											GALLERY
 										</NavLink>
 									</NavItem>
 									<div className="search-container">
@@ -183,7 +182,6 @@ function Header() {
 												<i className="fa-solid fa-magnifying-glass"></i>
 											</Button>
 										</Form>
-
 										{searchTerm && (
 											<div className="search-results">
 												{filteredProducts.length > 0 ? (
@@ -215,7 +213,7 @@ function Header() {
 																		: highlightText(
 																				product.description,
 																				searchTerm,
-																				130
+																				80
 																			)}
 																</p>
 															</div>
@@ -236,5 +234,3 @@ function Header() {
 		</>
 	);
 }
-
-export default Header;

@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (1).png"
+	},
+	{
+		"id": 2,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (2).png"
+	},
+	{
+		"id": 3,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (3).png"
+	},
+	{
+		"id": 4,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (4).png"
+	},
+	{
+		"id": 5,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (5).png"
+	},
+	{
+		"id": 6,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (6).png"
+	},
+	{
+		"id": 7,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (7).png"
+	},
+	{
+		"id": 8,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (8).png"
+	},
+	{
+		"id": 9,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (9).png"
+	},
+	{
+		"id": 10,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (10).png"
+	}
+]

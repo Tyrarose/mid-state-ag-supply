@@ -14,10 +14,9 @@
 }
 
 .featured {
-	width: 120%;
+	width: 100%;
 	height: auto;
 	object-fit: cover;
-	margin-left: -12%;
 }
 
 .title {
