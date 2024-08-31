@@ -102,7 +102,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	font-family: "Inter", sans-serif;
-	background-color: red;
+	margin: 30px;
 }
 
 .contact-item {
@@ -195,6 +195,10 @@
 	.box {
 		width: 25px;
 		padding: 6px;
+	}
+
+	.contact-info {
+		margin: 0px;
 	}
 
 	.contact-item {
