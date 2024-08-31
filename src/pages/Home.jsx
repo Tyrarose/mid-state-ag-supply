@@ -51,8 +51,8 @@ function Home() {
 				</div>
 				<div className="row ">
 					<div className="col-lg-6">
-						<div className="contact-info flex-lg-row flex-column">
-							<div className="col-lg-6">
+						<div className="contact-info">
+							<div className="col-lg-5">
 								<div className="contact-item">
 									<i className="fa-solid fa-clock box"></i>
 									<div className="contact-text">
@@ -71,7 +71,7 @@ function Home() {
 									</h6>
 								</div>
 							</div>
-							<div className="col-lg-6">
+							<div className="col-lg-7">
 								<div className="contact-item">
 									<i className="fa-solid fa-envelope box"></i>
 									<h6>

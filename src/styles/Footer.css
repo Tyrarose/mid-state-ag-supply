@@ -13,3 +13,10 @@
 .copyright a {
 	color: white;
 }
+
+@media only screen and (max-width: 767px) {
+	.copyright,
+	.copyright a {
+		font-size: 12px;
+	}
+}

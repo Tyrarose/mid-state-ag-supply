@@ -1,3 +1,4 @@
+/* Global styles */
 * {
 	/* border: 1px red dotted; */
 }
@@ -24,9 +25,8 @@
 	color: white;
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: 55px;
 	font-size: clamp(18px, 1.6vw, 55px);
-	padding: 50px 0px 20px 0px;
+	padding: 50px 0 20px;
 }
 
 .content {
@@ -46,13 +46,13 @@
 .section2 {
 	padding: 20px 30px;
 	margin: auto;
-	padding: auto;
 }
 
 .emergency-content {
 	margin: 10px;
 	padding-bottom: 20px;
 }
+
 .emergency {
 	display: flex;
 	flex-direction: column;
@@ -83,16 +83,16 @@
 }
 
 .box {
-	width: 50px;
+	width: 45px; /* Consolidated width */
 	border: 2px black solid;
-	padding: 8px;
+	padding: 8px; /* Consolidated padding */
 	border-radius: 8px;
-	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .footer {
-	/* display: flex; */
-	/* justify-content: space-between; */
 	align-items: center;
 	padding: 20px;
 }
@@ -100,7 +100,6 @@
 .contact-info {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	font-family: "Inter", sans-serif;
 	margin: 30px;
 }
@@ -108,12 +107,12 @@
 .contact-item {
 	display: flex;
 	align-items: center; /* Center items vertically */
-	gap: 20px;
+	gap: 18px;
 	padding-bottom: 20px;
 }
 
 .contact-item i {
-	font-size: clamp(12px, 1.6vw, 26px);
+	font-size: 20px;
 	text-align: center;
 }
 
@@ -128,36 +127,26 @@
 }
 
 .contact-text h6 {
-	margin-bottom: 3px; /* Adjust space below the heading */
+	margin-bottom: 3px;
 	font-size: clamp(14px, 1.6vw, 18px);
 }
 
 .contact-text p {
-	margin: 0; /* Remove default margins */
+	margin: 0;
 	font-size: clamp(14px, 1.6vw, 16px);
-}
-
-.box {
-	width: 50px;
-	border: 2px black solid;
-	padding: 10px;
-	border-radius: 8px;
-	display: flex;
-	align-items: center; /* Center content within the box */
-	justify-content: center;
 }
 
 .logo-section {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap; /* Allow images to wrap onto the next line */
-	justify-content: center; /* Center images horizontally */
-	gap: 10px; /* Maintain gap between images */
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
 }
 
 .logo-section img {
-	max-height: 80px; /* Ensure images are not too large */
-	margin: 5px; /* Add margin to avoid images touching edges */
+	max-height: 80px;
+	margin: 5px;
 }
 
 /* Media query for phones */
@@ -165,40 +154,40 @@
 	.home-gradient {
 		height: 270px;
 	}
-	.home-gradient * {
-		padding: 0;
-		margin: 0;
-	}
+
 	.line {
 		width: 60%;
 		margin: 5px auto;
 	}
 
 	.overflow-wrapper {
-		position: relative; /* Allows for positioning of the child */
-		overflow: hidden; /* Allow the image to overflow */
-		margin-left: -20px; /* Adjust to control the overflow amount */
+		position: relative;
+		overflow: hidden;
+		margin-left: -20px;
 	}
 
 	.image-container {
-		position: relative; /* Ensure positioning context */
-		width: 100%; /* Full width of the parent */
-		overflow: visible; /* Allow overflow of the image */
+		overflow: visible;
 	}
 
 	.featured {
 		height: 320px;
-		width: auto; /* Adjust width automatically */
-		margin-left: 0; /* Reset any margin-left */
+		width: auto;
+		margin-left: 0;
+	}
+
+	.contact-item i {
+		font-size: 16px;
 	}
 
 	.box {
-		width: 25px;
+		width: 34px;
 		padding: 6px;
 	}
 
 	.contact-info {
-		margin: 0px;
+		margin: 20px;
+		flex-direction: column;
 	}
 
 	.contact-item {
@@ -216,34 +205,27 @@
 
 	.ophours {
 		width: 110px;
+		padding: 0;
 	}
 
 	.logo-section img {
 		max-height: 40px;
 	}
 
-	.ophours {
-		padding: 0;
-	}
-
 	.emergency-content {
-		margin: 0;
+		margin: 10px;
 		display: flex;
-		align-items: center; /* Vertically align children */
+		align-items: center;
 	}
 
 	.emergency {
 		margin: 0 0 0 10px;
 		padding: 0;
-		flex: 1; /* Allow emergency to take up remaining space */
+		flex: 1;
 	}
 
 	.emergency .title,
 	.emergency .subtitle {
 		margin: 0;
-	}
-
-	.emergency .subtitle {
-		letter-spacing: 7px;
 	}
 }
