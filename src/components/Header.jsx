@@ -172,16 +172,21 @@ export default function Header() {
 										<Form className="d-flex search-bar">
 											<FormControl
 												type="search"
-												placeholder="Search"
+												placeholder="SEARCH"
 												aria-label="Search"
 												value={searchTerm}
 												onChange={handleSearch}
 												onBlur={handleBlur}
+												className="search-input"
 											/>
-											<Button variant="outline-primary">
+											<Button
+												variant="outline-primary"
+												className="search-button"
+											>
 												<i className="fa-solid fa-magnifying-glass"></i>
 											</Button>
 										</Form>
+
 										{searchTerm && (
 											<div className="search-results">
 												{filteredProducts.length > 0 ? (

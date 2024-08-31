@@ -1,36 +1,38 @@
-.container-fluid {
-	overflow: hidden;
+* {
+	/* border: 1px red dotted; */
 }
 
-.section1-home-gradient {
+.home-gradient {
 	background: linear-gradient(to right, #1645ff 0%, #006de9 77%);
-	height: 400px;
+	height: 420px;
 }
 
 .image-container {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 
 .featured {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 660px;
 	object-fit: cover;
 }
 
-.title {
+.home .title {
 	color: white;
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
 	font-size: 55px;
+	font-size: clamp(18px, 1.6vw, 55px);
 	padding: 50px 0px 20px 0px;
 }
 
 .content {
 	color: white;
 	font-family: "Malgun Gothic", sans-serif;
-	font-size: 20px;
+	font-size: clamp(10px, 1.6vw, 26px);
 	padding: 40px;
 }
 
@@ -42,28 +44,36 @@
 }
 
 .section2 {
-	padding: 30px;
+	padding: 20px 30px;
 	margin: auto;
 	padding: auto;
 }
 
-.emergency {
-	margin: 30px 20px;
+.emergency-content {
+	margin: 10px;
+	padding-bottom: 20px;
 }
-.emergency-service-content {
+.emergency {
 	display: flex;
 	flex-direction: column;
-	margin-left: 6vw;
+	margin-left: 50px;
 }
 
-.emergency-title {
+.emergency .title {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: 60px;
+	font-size: clamp(26px, 2.3vw, 80px);
+}
+
+.emergency .subtitle {
+	font-family: "Malgun Gothic", sans-serif;
+	font-weight: bold;
+	font-size: clamp(18px, 2vw, 55px);
+	letter-spacing: 7px;
 }
 
 .ophours {
-	width: 12vw;
+	width: 200px;
 }
 
 .service-title {
@@ -73,14 +83,15 @@
 }
 
 .box {
+	width: 50px;
 	border: 2px black solid;
 	padding: 8px;
 	border-radius: 8px;
 	overflow: hidden;
 }
 
-.footer-container {
-	display: flex;
+.footer {
+	/* display: flex; */
 	/* justify-content: space-between; */
 	align-items: center;
 	padding: 20px;
@@ -89,22 +100,50 @@
 .contact-info {
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	justify-content: space-between;
+	font-family: "Inter", sans-serif;
 }
 
 .contact-item {
 	display: flex;
-	align-items: center;
+	align-items: center; /* Center items vertically */
 	gap: 20px;
+	padding-bottom: 20px;
 }
 
-.contact-item > * {
-	font-family: "Inter", sans-serif;
+.contact-item i {
+	font-size: clamp(12px, 1.6vw, 26px);
+	text-align: center;
 }
+
+.contact-item h6 {
+	font-size: clamp(14px, 1.6vw, 18px);
+}
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+}
+
+.contact-text h6 {
+	margin-bottom: 3px; /* Adjust space below the heading */
+	font-size: clamp(14px, 1.6vw, 18px);
+}
+
+.contact-text p {
+	margin: 0; /* Remove default margins */
+	font-size: clamp(14px, 1.6vw, 16px);
+}
+
 .box {
+	width: 50px;
 	border: 2px black solid;
 	padding: 10px;
 	border-radius: 8px;
+	display: flex;
+	align-items: center; /* Center content within the box */
+	justify-content: center;
 }
 
 .logo-section {
@@ -118,4 +157,88 @@
 .logo-section img {
 	max-height: 80px; /* Ensure images are not too large */
 	margin: 5px; /* Add margin to avoid images touching edges */
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 767px) {
+	.home-gradient {
+		height: 270px;
+	}
+	.home-gradient * {
+		padding: 0;
+		margin: 0;
+	}
+	.line {
+		width: 60%;
+		margin: 5px auto;
+	}
+
+	.overflow-wrapper {
+		position: relative; /* Allows for positioning of the child */
+		overflow: hidden; /* Allow the image to overflow */
+		margin-left: -20px; /* Adjust to control the overflow amount */
+	}
+
+	.image-container {
+		position: relative; /* Ensure positioning context */
+		width: 100%; /* Full width of the parent */
+		overflow: visible; /* Allow overflow of the image */
+	}
+
+	.featured {
+		height: 320px;
+		width: auto; /* Adjust width automatically */
+		margin-left: 0; /* Reset any margin-left */
+	}
+
+	.box {
+		width: 25px;
+		padding: 6px;
+	}
+
+	.contact-item {
+		gap: 14px;
+	}
+
+	.home .title {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+
+	.home .content {
+		padding: 14px;
+	}
+
+	.ophours {
+		width: 110px;
+	}
+
+	.logo-section img {
+		max-height: 40px;
+	}
+
+	.ophours {
+		padding: 0;
+	}
+
+	.emergency-content {
+		margin: 0;
+		display: flex;
+		align-items: center; /* Vertically align children */
+	}
+
+	.emergency {
+		margin: 0 0 0 10px;
+		padding: 0;
+		flex: 1; /* Allow emergency to take up remaining space */
+	}
+
+	.emergency .title,
+	.emergency .subtitle {
+		margin: 0;
+	}
+
+	.emergency .subtitle {
+		letter-spacing: 7px;
+	}
 }

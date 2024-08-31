@@ -1,4 +1,15 @@
 .gradient-footer {
 	background: linear-gradient(to right, #1645ff 0%, #006de9 77%);
-	height: 40px;
+	padding: 8px 0; /* Adjust the padding to control the height */
+}
+
+.copyright {
+	font-family: "Malgun Gothic", sans-serif;
+	color: white;
+	margin: 0; /* Reset margin to avoid additional space */
+	padding: 10px 20px; /* Add padding to control spacing around the text */
+}
+
+.copyright a {
+	color: white;
 }

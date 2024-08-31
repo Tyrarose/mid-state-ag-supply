@@ -63,3 +63,29 @@
 	border: 3px solid #ffeb3b; /* Highlight border color */
 	border-radius: 5px; /* Rounded corners */
 }
+
+@media only screen and (max-width: 767px) {
+	.landscape-highlight img,
+	.portrait-highlight img {
+		height: auto; /* Allow height to adjust automatically */
+		width: 100%; /* Ensure the image fits within the container */
+		max-height: 200px; /* Set a maximum height suitable for mobile */
+		min-height: 0; /* Override the min-height to allow smaller sizes */
+	}
+
+	.highlighted-image {
+		min-height: 0; /* Allow the highlighted image to be smaller */
+		height: auto; /* Adjust height automatically */
+	}
+
+	.landscape-highlight,
+	.portrait-highlight {
+		margin-bottom: 10px; /* Reduce margin for mobile */
+	}
+
+	.landscape-image,
+	.portrait-image {
+		margin: 5px;
+		max-height: 75px;
+	}
+}
