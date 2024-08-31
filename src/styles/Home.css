@@ -62,13 +62,13 @@
 .emergency .title {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: clamp(26px, 2.3vw, 80px);
+	font-size: clamp(32px, 2.3vw, 80px);
 }
 
 .emergency .subtitle {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: clamp(18px, 2vw, 55px);
+	font-size: clamp(22px, 2vw, 55px);
 	letter-spacing: 7px;
 }
 
@@ -214,7 +214,8 @@
 	.emergency-content {
 		display: flex;
 		align-items: center;
-		padding-bottom: 0;
+		padding-bottom: 20px;
+		margin: auto;
 	}
 
 	.emergency {
