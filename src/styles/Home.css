@@ -186,7 +186,7 @@
 	}
 
 	.contact-info {
-		margin: 10px;
+		/* margin: 10px; */
 		flex-direction: column;
 	}
 
@@ -213,7 +213,7 @@
 	}
 
 	.emergency-content {
-		margin: 5px;
+		/* margin: 5px; */
 		display: flex;
 		align-items: center;
 	}
