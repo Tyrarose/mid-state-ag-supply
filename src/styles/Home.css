@@ -1,6 +1,6 @@
 /* Global styles */
 * {
-	/* border: 1px red dotted; */
+	border: 1px red dotted;
 }
 
 .home-gradient {
@@ -186,7 +186,7 @@
 	}
 
 	.contact-info {
-		/* margin: 10px; */
+		margin: 5px;
 		flex-direction: column;
 	}
 
@@ -205,7 +205,6 @@
 
 	.ophours {
 		width: 110px;
-		padding: 0;
 	}
 
 	.logo-section img {
@@ -213,9 +212,9 @@
 	}
 
 	.emergency-content {
-		/* margin: 5px; */
 		display: flex;
 		align-items: center;
+		padding-bottom: 0;
 	}
 
 	.emergency {
