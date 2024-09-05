@@ -48,5 +48,20 @@
 		"id": 10,
 		"type": "landscape",
 		"imageURL": "/images/gallery/landscape/landscape (10).png"
+	},
+	{
+		"id": 11,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (11).png"
+	},
+	{
+		"id": 12,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (12).png"
+	},
+	{
+		"id": 13,
+		"type": "landscape",
+		"imageURL": "/images/gallery/landscape/landscape (13).png"
 	}
 ]

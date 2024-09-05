@@ -63,5 +63,25 @@
 		"id": 13,
 		"type": "portrait",
 		"imageURL": "/images/gallery/portrait/portrait (13).png"
+	},
+	{
+		"id": 14,
+		"type": "portrait",
+		"imageURL": "/images/gallery/portrait/portrait (14).png"
+	},
+	{
+		"id": 15,
+		"type": "portrait",
+		"imageURL": "/images/gallery/portrait/portrait (15).png"
+	},
+	{
+		"id": 16,
+		"type": "portrait",
+		"imageURL": "/images/gallery/portrait/portrait (16).png"
+	},
+	{
+		"id": 17,
+		"type": "portrait",
+		"imageURL": "/images/gallery/portrait/portrait (17).png"
 	}
 ]

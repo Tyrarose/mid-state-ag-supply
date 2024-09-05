@@ -8,7 +8,8 @@ function Footer() {
 		<footer>
 			<div className="gradient-footer">
 				<p className="copyright text-center">
-					© Copyright {currentYear} Developed by{" "}
+					© Copyright {currentYear}
+					{/* Developed by{" "}
 					<a
 						href="https://www.tyragenerose.top/"
 						className="develink"
@@ -16,7 +17,7 @@ function Footer() {
 						rel="noopener noreferrer"
 					>
 						Tyra
-					</a>
+					</a> */}
 				</p>
 			</div>
 		</footer>

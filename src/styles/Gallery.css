@@ -1,91 +1,47 @@
 /* Gallery.css */
-.landscape-section,
-.portrait-section {
-	margin: 20px;
+.desktop {
+	display: block;
 }
 
-.content-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.mobile {
+	display: none;
 }
 
-.landscape-highlight,
-.portrait-highlight {
+.desktop {
+	margin: 20px auto;
+}
+.row {
+	width: 100%;
+	justify-content: center;
+}
+
+.collage-item {
+	height: 20vh;
+	width: auto;
 	margin-bottom: 20px;
 }
 
-.highlighted-image {
-	min-height: 500px; /* Ensure highlighted image has proper height */
-	transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+.desktop > .row:nth-child(4) {
+	gap: 2vh;
 }
 
-.landscape-highlight img,
-.portrait-highlight img {
-	min-height: 550px;
+.desktop > .row:nth-child(5) {
+	gap: 0.5vh;
 }
 
-.landscape-strips,
-.portrait-strips {
-	width: 100vw; /* Full viewport width */
-	margin-left: calc(-50vw + 50%); /* Center the gradient strip */
-	margin-right: calc(-50vw + 50%); /* Center the gradient strip */
-	background: linear-gradient(to right, #1645ff, #006de9);
-	padding: 10px 0; /* Adjust padding as needed */
-	box-sizing: border-box;
-	overflow: hidden; /* Hide any overflow */
-}
-
-.landscape-images,
-.portrait-images {
-	display: flex;
-	flex-wrap: wrap; /* Allow images to wrap to the next row */
-	justify-content: center; /* Center the images horizontally within the container */
-	max-width: 100%; /* Ensure the images don't overflow the container */
-	gap: 10px; /* Space between images */
-}
-
-.landscape-image,
-.portrait-image {
-	margin: 10px; /* Space between images */
-	max-height: 140px; /* Adjust as needed */
-	object-fit: cover;
-	cursor: pointer; /* Change cursor on hover */
-	transition: transform 0.3s ease; /* Smooth zoom effect */
-}
-
-.landscape-image:hover,
-.portrait-image:hover {
-	transform: scale(1.1); /* Zoom effect on hover */
-}
-
-.selected-image {
-	border: 3px solid #ffeb3b; /* Highlight border color */
-	border-radius: 5px; /* Rounded corners */
-}
-
+/* Media query for mobile screens */
 @media only screen and (max-width: 767px) {
-	.landscape-highlight img,
-	.portrait-highlight img {
-		height: auto; /* Allow height to adjust automatically */
-		width: 100%; /* Ensure the image fits within the container */
-		max-height: 200px; /* Set a maximum height suitable for mobile */
-		min-height: 0; /* Override the min-height to allow smaller sizes */
+	.desktop {
+		display: none;
 	}
 
-	.highlighted-image {
-		min-height: 0; /* Allow the highlighted image to be smaller */
-		height: auto; /* Adjust height automatically */
+	.mobile {
+		display: block;
 	}
 
-	.landscape-highlight,
-	.portrait-highlight {
-		margin-bottom: 10px; /* Reduce margin for mobile */
-	}
-
-	.landscape-image,
-	.portrait-image {
-		margin: 5px;
-		max-height: 75px;
+	.collage-item {
+		height: auto;
+		width: 70%;
+		margin: 10px;
 	}
 }
