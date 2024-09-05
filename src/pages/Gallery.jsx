@@ -28,7 +28,7 @@ function Gallery() {
 	const [highlightedImage, setHighlightedImage] = React.useState("");
 
 	const handleImageClick = (imageURL) => {
-		setHighlightedImage(imageURL);
+		setHighlightedImage((prev) => (prev ? "" : imageURL));
 	};
 
 	const rows = [
@@ -61,6 +61,7 @@ function Gallery() {
 							src={item.imageURL}
 							className="collage-item"
 							alt={`Portrait ${item.id}`}
+							onClick={() => handleImageClick(item.imageURL)}
 						/>
 					))}
 				</div>
@@ -70,11 +71,26 @@ function Gallery() {
 							key={item.id}
 							src={item.imageURL}
 							className="collage-item"
-							alt={`Landscapee ${item.id}`}
+							alt={`Landscape ${item.id}`}
+							onClick={() => handleImageClick(item.imageURL)}
 						/>
 					))}
 				</div>
 			</section>
+
+			{/* Fullscreen image */}
+			{highlightedImage && (
+				<div
+					className="fullscreen-overlay"
+					onClick={() => setHighlightedImage("")}
+				>
+					<img
+						src={highlightedImage}
+						alt="Fullscreen"
+						className="fullscreen-image"
+					/>
+				</div>
+			)}
 		</div>
 	);
 }
