@@ -1,0 +1,27 @@
+.products-container {
+	align-items: center;
+}
+.title {
+	font-weight: bold;
+	font-family: "Inter", sans-serif;
+	margin-bottom: 30px;
+}
+.buttons {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-btn {
+	width: 40vw;
+	margin-bottom: 22px;
+	font-family: "Inter", sans-serif;
+	background-color: #006de9;
+}
+
+@media only screen and (max-width: 767px) {
+	.product-btn {
+		width: 80vw;
+	}
+}

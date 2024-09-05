@@ -42,6 +42,7 @@ function Gallery() {
 
 	return (
 		<div>
+			<h1 className="title text-center">Gallery</h1>
 			<section className="desktop">
 				{rows.map((ids, index) => (
 					<Row
