@@ -8,9 +8,8 @@ function Products() {
 		<div className="container products-container text-center">
 			<h1 className="title">Our Product Range</h1>
 			<p className="products-context text-center">
-				Certainly! Here’s a concise introduction to the range of
-				products: Our Product Range Explore our diverse selection of
-				high-quality products designed to meet various needs:
+				Our Product Range Explore our diverse selection of high-quality
+				products designed to meet various needs:
 			</p>
 			<section className="buttons">
 				{buttonNames.map((item) => (

@@ -155,9 +155,15 @@
 		height: 300px;
 	}
 
+	.home-title {
+		padding: 10px;
+	}
+	.home .content {
+		padding: 12px;
+	}
 	.line {
 		width: 60%;
-		margin: 5px auto;
+		margin: auto;
 	}
 
 	.overflow-wrapper {
@@ -197,15 +203,6 @@
 
 	.contact-item {
 		gap: 14px;
-	}
-
-	.home .title {
-		padding-top: 30px;
-		padding-bottom: 0;
-	}
-
-	.home .content {
-		padding: 14px;
 	}
 
 	.ophours {
