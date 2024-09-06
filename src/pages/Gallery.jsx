@@ -6,7 +6,7 @@ import portraitGallery from "../data/gallery-portrait.json";
 import landscapeGallery from "../data/gallery-landscape.json";
 
 const Row = ({ ids, gallery, handleImageClick, rowNumber }) => (
-	<div className={`row row-${rowNumber}`}>
+	<div className={`row gallery-row row-${rowNumber}`}>
 		{/* <div className="row-header">Row {rowNumber}</div> */}
 		{ids.map((id) =>
 			gallery
@@ -42,7 +42,21 @@ function Gallery() {
 
 	return (
 		<div>
-			<h1 className="title text-center">Gallery</h1>
+			<h1 className="title text-center">Welcome to our gallery,</h1>
+			<p className="gallery-context text-center">
+				Discover how Mid-State Ag Supply LLC’s solutions make a
+				difference in the field. Our gallery showcases real-world
+				applications of our ventilation systems, barn curtains, and
+				fans, highlighting their impact on farm productivity and animal
+				comfort.
+			</p>
+			<p className="gallery-context text-center">
+				See our expertly designed products in action, enhancing
+				livestock environments and optimizing farming operations.
+				<br></br>Explore the practical benefits and exceptional quality
+				of our solutions through these visual examples.
+			</p>
+
 			<section className="desktop">
 				{rows.map((ids, index) => (
 					<Row

@@ -3,6 +3,12 @@
 	display: block;
 }
 
+.gallery-context {
+	margin: 25px auto 40px;
+	font-family: "Inter", sans-serif;
+	width: 64vw;
+}
+
 .mobile {
 	display: none;
 }
@@ -11,7 +17,7 @@
 	margin: 20px auto;
 }
 
-.row {
+.gallery-row {
 	width: 100%;
 	justify-content: center;
 }
@@ -20,6 +26,7 @@
 	height: 20vh;
 	width: auto;
 	margin-bottom: 20px;
+	transition: transform 0.3s ease;
 }
 
 .desktop > .row:nth-child(4) {
@@ -64,4 +71,8 @@
 		width: 70%;
 		margin: 10px;
 	}
+}
+
+.collage-item:hover {
+	transform: scale(1.1);
 }

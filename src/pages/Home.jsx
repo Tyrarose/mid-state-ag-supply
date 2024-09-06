@@ -4,33 +4,35 @@ import "../styles/Home.css";
 
 function Home() {
 	return (
-		<container>
+		<div>
 			<section className="home-gradient">
-				<div className="row text-center">
-					<div className="home col-6">
-						<h2 className="title">OUR MISSION</h2>
-						<div className="line"></div>
-						<p className="content">
-							Mid-State Ag Supply LLC is dedicated to improving
-							farm productivity and animal comfort through
-							expertly designed and installed ventilation systems,
-							barn curtains, and fans. Our commitment to quality
-							and service excellence ensures a superior
-							environment for livestock and streamlined operations
-							for farmers.
-						</p>
-					</div>
-					<div className="col-6">
-						<div className="overflow-wrapper">
-							<div className="image-container">
-								<img
-									className="featured"
-									src={
-										process.env.PUBLIC_URL +
-										"/images/tablet.png"
-									}
-									alt="tablet"
-								/>
+				<div className="home-gradient-content">
+					<div className="row text-center">
+						<div className="home col-6">
+							<h2 className="home-title">OUR MISSION</h2>
+							<div className="line"></div>
+							<p className="content">
+								Mid-State Ag Supply LLC is dedicated to
+								improving farm productivity and animal comfort
+								through expertly designed and installed
+								ventilation systems, barn curtains, and fans.
+								Our commitment to quality and service excellence
+								ensures a superior environment for livestock and
+								streamlined operations for farmers.
+							</p>
+						</div>
+						<div className="col-6">
+							<div className="overflow-wrapper">
+								<div className="image-container">
+									<img
+										className="featured"
+										src={
+											process.env.PUBLIC_URL +
+											"/images/tablet.png"
+										}
+										alt="tablet"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -38,21 +40,21 @@ function Home() {
 			</section>
 
 			<section className="section2">
-				<div className="row align-items-center emergency-content">
+				<div className="row emergency-content">
 					<img
 						className="ophours"
 						src={process.env.PUBLIC_URL + "/images/24-7.png"}
 						alt="24/7"
 					/>
 					<div className="col-lg-4 emergency">
-						<h1 className="title">EMERGENCY</h1>
-						<h2 className="subtitle">SERVICE</h2>
+						<h1 className="emergency-title">EMERGENCY</h1>
+						<h2 className="emergency-subtitle">SERVICE</h2>
 					</div>
 				</div>
 				<div className="row ">
 					<div className="col-lg-6">
 						<div className="contact-info">
-							<div className="col-lg-5">
+							<div className="col-lg-6 col-md-12">
 								<div className="contact-item">
 									<i className="fa-solid fa-clock box"></i>
 									<div className="contact-text">
@@ -71,7 +73,7 @@ function Home() {
 									</h6>
 								</div>
 							</div>
-							<div className="col-lg-7">
+							<div className="col-lg-7 col-md-12">
 								<div className="contact-item">
 									<i className="fa-solid fa-envelope box"></i>
 									<h6>
@@ -133,7 +135,7 @@ function Home() {
 					</div>
 				</div>
 			</section>
-		</container>
+		</div>
 	);
 }
 

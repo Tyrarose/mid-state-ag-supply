@@ -5,7 +5,7 @@
 
 .home-gradient {
 	background: linear-gradient(to right, #1645ff 0%, #006de9 77%);
-	height: 420px;
+	height: 55vh;
 }
 
 .image-container {
@@ -21,11 +21,11 @@
 	object-fit: cover;
 }
 
-.home .title {
+.home-title {
 	color: white;
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: clamp(18px, 1.6vw, 55px);
+	font-size: clamp(28px, 4vw, 80px);
 	padding: 50px 0 20px;
 }
 
@@ -49,23 +49,23 @@
 }
 
 .emergency-content {
-	margin: 10px;
+	/* margin: 10px; */
 	padding-bottom: 20px;
 }
 
 .emergency {
 	display: flex;
 	flex-direction: column;
-	margin-left: 50px;
+	justify-content: center;
 }
 
-.emergency .title {
+.emergency-title {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: clamp(32px, 2.3vw, 80px);
+	font-size: clamp(32px, 2.8vw, 80px);
 }
 
-.emergency .subtitle {
+.emergency-subtitle {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
 	font-size: clamp(22px, 2vw, 55px);
@@ -152,7 +152,7 @@
 /* Media query for phones */
 @media only screen and (max-width: 767px) {
 	.home-gradient {
-		height: 270px;
+		height: 300px;
 	}
 
 	.line {
@@ -163,7 +163,12 @@
 	.overflow-wrapper {
 		position: relative;
 		overflow: hidden;
-		margin-left: -20px;
+		margin-left: -32px;
+	}
+
+	.featured {
+		height: 360px;
+		width: auto;
 	}
 
 	.image-container {
@@ -219,13 +224,55 @@
 	}
 
 	.emergency {
-		margin: 0 0 0 10px;
 		padding: 0;
 		flex: 1;
+		justify-content: center;
 	}
+}
 
-	.emergency .title,
-	.emergency .subtitle {
-		margin: 0;
+/* Media query for tablets (medium screens) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.ophours {
+		width: 160px;
+	}
+	.contact-info {
+		margin: 5px;
+		flex-direction: column;
+	}
+	.contact-item i {
+		font-size: 16px;
+		text-align: center;
+	}
+	.featured {
+		height: 480px;
+	}
+}
+
+/* Media query for small desktops (large screens) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.home-gradient {
+		height: 44vh;
+	}
+}
+
+/* Media query for large desktops (extra-large screens) */
+@media only screen and (min-width: 1441px) {
+	.home-gradient {
+		height: 44vh;
+	}
+	.emergency-content {
+		margin-left: 120px;
+	}
+	.ophours {
+		width: 220px;
+	}
+	.emergency-title {
+		font-size: 60px;
+	}
+	.emergency-subtitle {
+		font-size: 52px;
+	}
+	.emergency {
+		margin-left: 20px;
 	}
 }

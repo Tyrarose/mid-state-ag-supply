@@ -6,7 +6,12 @@ import buttonNames from "../data/products-buttonNames.json";
 function Products() {
 	return (
 		<div className="container products-container text-center">
-			<h1 className="title">Products</h1>
+			<h1 className="title">Our Product Range</h1>
+			<p className="products-context text-center">
+				Certainly! Here’s a concise introduction to the range of
+				products: Our Product Range Explore our diverse selection of
+				high-quality products designed to meet various needs:
+			</p>
 			<section className="buttons">
 				{buttonNames.map((item) => (
 					<button
@@ -18,6 +23,10 @@ function Products() {
 					</button>
 				))}
 			</section>
+			<p className="products-context">
+				Each product is crafted to provide exceptional quality and
+				performance in its respective field.
+			</p>
 		</div>
 	);
 }
