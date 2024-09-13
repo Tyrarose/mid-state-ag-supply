@@ -49,7 +49,7 @@ function Products() {
 					block: "start",
 				});
 			}
-		}, 50);
+		}, 180);
 	};
 
 	return (
