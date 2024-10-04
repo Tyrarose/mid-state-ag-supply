@@ -1,15 +1,25 @@
 .products-container {
+	margin-top: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	width: 100vw; /* Full width of the viewport */
+	height: 85vh; /* Full height of the viewport */
+	padding: 0; /* Remove padding to make sure it fills the entire viewport */
+	box-sizing: border-box; /* Ensure padding and borders are included in the element's total width/height */
 }
+
 .title {
 	font-weight: bold;
 	font-family: "Inter", sans-serif;
 	margin-bottom: 30px;
 }
 .products-context {
-	margin: 25px auto 55px;
+	margin: 5px auto;
+	margin-bottom: 30px;
 	font-family: "Inter", sans-serif;
-	width: 40vw;
+	min-width: 40vw;
 }
 .buttons {
 	margin: auto;

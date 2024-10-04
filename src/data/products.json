@@ -1,42 +1,73 @@
-[
-	{
-		"id": 1,
-		"name": "product1",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	},
-	{
-		"id": 2,
-		"name": "product2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	},
-	{
-		"id": 3,
-		"name": "product3",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	},
-	{
-		"id": 4,
-		"name": "product4",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	},
-	{
-		"id": 5,
-		"name": "product5",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	},
-	{
-		"id": 6,
-		"name": "product6",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	},
-	{
-		"id": 7,
-		"name": "product7",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	},
-	{
-		"id": 8,
-		"name": "product8",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	}
-]
+{
+	"Shady Lane Curtains": [
+		"/images/products/ShadyLaneCurtains/product1-1.png",
+		"/images/products/ShadyLaneCurtains/product1-2.png"
+	],
+	"Secco Chimneys": [
+		"/images/products/SeccoChimneys/product2-1.png",
+		"/images/products/SeccoChimneys/product2-2.png",
+		"/images/products/SeccoChimneys/product2-3.png",
+		"/images/products/SeccoChimneys/product2-4.png"
+	],
+	"Fans": [
+		"/images/products/Fans/product3-1.png",
+		"/images/products/Fans/product3-2.png",
+		"/images/products/Fans/product3-3.png",
+		"/images/products/Fans/product3-4.png",
+		"/images/products/Fans/product3-5.png",
+		"/images/products/Fans/product3-6.png",
+		"/images/products/Fans/product3-7.png",
+		"/images/products/Fans/product3-8.png"
+	],
+	"Freestalls": [
+		"/images/products/Freestalls/product4-1.png",
+		"/images/products/Freestalls/product4-2.png",
+		"/images/products/Freestalls/product4-3.png",
+		"/images/products/Freestalls/product4-4.png",
+		"/images/products/Freestalls/product4-5.png",
+		"/images/products/Freestalls/product4-6.png",
+		"/images/products/Freestalls/product4-7.png",
+		"/images/products/Freestalls/product4-8.png",
+		"/images/products/Freestalls/product4-9.png"
+	],
+	"EXL Lockups": [
+		"/images/products/EXLLockups/product5-1.png",
+		"/images/products/EXLLockups/product5-2.png",
+		"/images/products/EXLLockups/product5-3.png",
+		"/images/products/EXLLockups/product5-4.png"
+	],
+	"Stainless Steel Tip Tanks": [
+		"/images/products/StainlessStealTipTanks/product6-1.png",
+		"/images/products/StainlessStealTipTanks/product6-2.png",
+		"/images/products/StainlessStealTipTanks/product6-3.png",
+		"/images/products/StainlessStealTipTanks/product6-4.png"
+	],
+	"Auto Vent Controllers": [
+		"/images/products/AutoVentControllers/product7-1.png",
+		"/images/products/AutoVentControllers/product7-2.png",
+		"/images/products/AutoVentControllers/product7-3.png",
+		"/images/products/AutoVentControllers/product7-4.png",
+		"/images/products/AutoVentControllers/product7-5.png",
+		"/images/products/AutoVentControllers/product7-6.png",
+		"/images/products/AutoVentControllers/product7-7.png",
+		"/images/products/AutoVentControllers/product7-8.png",
+		"/images/products/AutoVentControllers/product7-9.png",
+		"/images/products/AutoVentControllers/product7-10.png",
+		"/images/products/AutoVentControllers/product7-11.png",
+		"/images/products/AutoVentControllers/product7-12.png",
+		"/images/products/AutoVentControllers/product7-13.png",
+		"/images/products/AutoVentControllers/product7-14.png",
+		"/images/products/AutoVentControllers/product7-15.png",
+		"/images/products/AutoVentControllers/product7-16.png",
+		"/images/products/AutoVentControllers/product7-17.png",
+		"/images/products/AutoVentControllers/product7-18.png",
+		"/images/products/AutoVentControllers/product7-19.png",
+		"/images/products/AutoVentControllers/product7-20.png",
+		"/images/products/AutoVentControllers/product7-21.png",
+		"/images/products/AutoVentControllers/product7-22.png",
+		"/images/products/AutoVentControllers/product7-23.png",
+		"/images/products/AutoVentControllers/product7-24.png",
+		"/images/products/AutoVentControllers/product7-25.png",
+		"/images/products/AutoVentControllers/product7-26.png"
+	]
+}

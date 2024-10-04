@@ -5,7 +5,7 @@ function product5() {
 		<section>
 			<h1>EXL Lockups</h1>
 
-			<p className="m-5">Coming soon ...</p>
+			<div className="row"></div>
 		</section>
 	);
 }

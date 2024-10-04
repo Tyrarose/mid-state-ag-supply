@@ -7,9 +7,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
 import Gallery from "./pages/Gallery";
-import Product1 from "./pages/products/product1";
-import Product2 from "./pages/products/product2";
-import Product3 from "./pages/products/product3";
+import ProductProp from "./components/ProductProp";
 
 import logo from "./logo.svg";
 import "./App.css";
@@ -23,9 +21,11 @@ function App() {
 				<Route path="/products" element={<Products />} />
 				<Route path="/contactus" element={<ContactUs />} />
 				<Route path="/gallery" element={<Gallery />} />
-				<Route path="/products/product1" element={<Product1 />} /> {}
-				<Route path="/products/product2" element={<Product2 />} /> {}
-				<Route path="/products/product3" element={<Product3 />} /> {}
+				{/* Dynamic route for products */}
+				<Route
+					path="/products/:productName"
+					element={<ProductProp />}
+				/>
 			</Routes>
 			<Footer />
 		</Router>

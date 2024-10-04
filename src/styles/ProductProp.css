@@ -1,0 +1,67 @@
+.scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	font-family: "Overpass", sans-serif;
+}
+
+.breadcrumb {
+	display: flex;
+	align-items: center;
+}
+
+.breadcrumb-item {
+	position: relative;
+	padding: 10px 30px 10px 15px; /* Padding adjusted for arrow shape */
+	background-color: white;
+	color: #007bff;
+	font-family: "Overpass", sans-serif;
+	text-decoration: none;
+	margin-right: 10px; /* Space between each item */
+	font-weight: 600;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px 0 0 10px; /* Rounded corner for the first item */
+}
+
+.breadcrumb-item::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	/* right: -15px; */
+	/* color: green; */
+	transform: translateY(-50%);
+	border-left: 15px solid white;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	z-index: 1;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+	margin-left: -15px; /* Overlap the arrow part */
+}
+
+.breadcrumb-item:last-child {
+	background-color: #f5f5f5; /* Different color for the last item */
+	color: #333;
+}
+
+.breadcrumb-item:last-child::after {
+	content: none; /* Remove the arrow for the last item */
+}
+
+.breadcrumb-item.active {
+	pointer-events: none; /* Disable pointer for the active item */
+	background-color: #007bff;
+	color: white;
+	border-radius: 5px;
+}
+
+.breadcrumb-item.active::after {
+	border-left-color: #007bff; /* Keep the arrow color consistent */
+}

@@ -4,8 +4,7 @@ function product4() {
 	return (
 		<section>
 			<h1>Freestalls</h1>
-
-			<p className="m-5">Coming soon ...</p>
+			<div className="row"></div>
 		</section>
 	);
 }
