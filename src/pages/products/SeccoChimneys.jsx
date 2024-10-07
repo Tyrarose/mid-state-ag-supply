@@ -54,7 +54,14 @@ function SeccoChimneys() {
 			</nav>
 
 			<div className="row">
-				<h3 className="text-center fw-bold">Chimneys & Roof Vent</h3>
+				<img
+					src="/images/products/SeccoChimneys/product2-1.png"
+					className="card-img-top"
+					alt="Secco Chimney Hero Image"
+				/>
+				<h3 className="text-center fw-bold mt-4">
+					Chimneys & Roof Vent
+				</h3>
 				<h4 className="text-center fw-bold mb-4">
 					Versatile, sturdy, and insulating!
 				</h4>
