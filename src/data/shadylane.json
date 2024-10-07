@@ -1,0 +1,32 @@
+[
+	{
+		"image": "/images/products/ShadyLaneCurtains/shadylane1.png",
+		"product_name": "CLEAR VIEW CURTAINS",
+		"description": "Windows in Curtains for More Light"
+	},
+	{
+		"image": "/images/products/ShadyLaneCurtains/shadylane2.png",
+		"product_name": "DOUBLE ROLL-UP CURTAINS",
+		"description": "Allows for Center and Bottom Ventilation"
+	},
+	{
+		"image": "/images/products/ShadyLaneCurtains/shadylane3.png",
+		"product_name": "DROP AND ROLL CURTAINS",
+		"description": "Position where needed | Economical for smaller barns"
+	},
+	{
+		"image": "/images/products/ShadyLaneCurtains/shadylane4.png",
+		"product_name": "CENTER ROLL UP CURTAINS",
+		"description": "Use on Gable Ends as Doors for More Light"
+	},
+	{
+		"image": "/images/products/ShadyLaneCurtains/shadylane5.png",
+		"product_name": "BAFFLE CURTAINS",
+		"description": "For In-barn Ventilation"
+	},
+	{
+		"image": "/images/products/ShadyLaneCurtains/shadylane6.png",
+		"product_name": "SINGLE ROLL-UP CURTAINS",
+		"description": "Ideal for sidewalls up to 9’"
+	}
+]

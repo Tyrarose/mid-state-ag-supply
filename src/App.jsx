@@ -8,6 +8,8 @@ import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
 import Gallery from "./pages/Gallery";
 import ProductProp from "./components/ProductProp";
+import ShadyLane from "./pages/products/ShadyLane";
+import SeccoChimneys from "./pages/products/SeccoChimneys";
 
 import logo from "./logo.svg";
 import "./App.css";
@@ -21,7 +23,15 @@ function App() {
 				<Route path="/products" element={<Products />} />
 				<Route path="/contactus" element={<ContactUs />} />
 				<Route path="/gallery" element={<Gallery />} />
-				{/* Dynamic route for products */}
+				{/* Add routes for specific products */}
+				<Route path="/products/shady-lane" element={<ShadyLane />} />
+				<Route
+					path="/products/secco-chimneys"
+					element={<SeccoChimneys />}
+				/>
+				<Route path="/products/shady-lane" element={<ShadyLane />} />
+
+				{/* Catch all other products with ProductProp */}
 				<Route
 					path="/products/:productName"
 					element={<ProductProp />}

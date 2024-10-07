@@ -1,0 +1,54 @@
+[
+	{
+		"image": "/images/products/SeccoChimneys/seccochimneys1.png",
+		"product_name": "Square Chimney",
+		"descriptions": [
+			"Inside dimensions of 19” x 19” or 24” x 24” or 30” x 30” or 36” x 36” or 40” x 40” (483 x 483 mm or 610 x 610 mm or 762 x 762 mm or 915 x 915 mm or 1016 x 1016 mm)",
+			"Bird barrier available",
+			"Custom-built according to roof slope to prevent any water flow",
+			"Insulated and light, rigid model"
+		]
+	},
+	{
+		"image": "/images/products/SeccoChimneys/seccochimneys2.png",
+		"product_name": "Rectangular Chimney",
+		"descriptions": [
+			"Inside dimensions of 19” x 30” (483 x 762 mm)",
+			"Bird barrier available",
+			"Custom-built according to roof slope to prevent any water flow",
+			"Insulated and light, rigid model",
+			"Available with a flange welded on the opposite side"
+		]
+	},
+
+	{
+		"image": "/images/products/SeccoChimneys/seccochimneys3.png",
+		"product_name": "Chimney Ducting",
+		"descriptions": [
+			"Inside dimensions of 19” x 19” or 24” x 24” or 30” x 30” or 36” x 36” or 40” x 40” or 19” x 30” (483 x 483 mm or 610 x 610 mm or 762 x 762 mm or 915 x 915 mm or 1016 x 1016 mm or 483 x 762 mm)",
+			"Delivered unassembled for freight savings",
+			"Insulated and light, rigid model"
+		]
+	},
+	{
+		"image": "/images/products/SeccoChimneys/seccochimneys4.png",
+		"product_name": "Damper",
+		"descriptions": [
+			"Inside dimensions of 19” x 19” or 24” x 24” or 30” x 30” or 36” x 36” or 40” x 40” or 19” x 30” (483 x 483 mm or 610 x 610 mm or 762 x 762 mm or 915 x 915 mm or 1016 x 1016 mm or 483 x 762 mm)",
+			"Insulated and light, rigid model",
+			"Can be installed on the top or bottom",
+			"Automatic or manual adjustment control"
+		]
+	},
+	{
+		"image": "/images/products/SeccoChimneys/seccochimneys5.png",
+		"product_name": "Linear Roof Vent",
+		"descriptions": [
+			"Inside dimensions of 8” x 48” (203 x 1220 mm) or 8” x 96” (203 x 2448 mm)",
+			"Standard roof slope included",
+			"Allows ventilating the attic",
+			"Ventilates 1000 sq. feet (100 m2) or 2000 sq. feet (200 m2)",
+			"Insulated and light, rigid model"
+		]
+	}
+]
