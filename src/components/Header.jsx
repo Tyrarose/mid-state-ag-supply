@@ -10,39 +10,60 @@ import {
 	Button,
 } from "react-bootstrap";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import productsData from "../data/products.json";
 import "../styles/Header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const productsData = [
+	{ id: 1, name: "Shady Lane Curtain", url: "/products/shady-lane" },
+	{ id: 2, name: "Secco Chimneys", url: "/products/secco-chimneys" },
+	{ id: 3, name: "Fans", url: "/products/Fans" },
+	{ id: 4, name: "Freestalls", url: "/products/Freestalls" },
+	{ id: 5, name: "EXL Lockups", url: "/products/EXL%20Lockups" },
+	{
+		id: 6,
+		name: "Stainless Steel Tip Tanks",
+		url: "/products/Stainless%20Steel%20Tip%20Tanks",
+	},
+	{
+		id: 7,
+		name: "Auto Vent Controllers",
+		url: "/products/Auto%20Vent%20Controllers",
+	},
+];
+
+const defaultSuggestions = [
+	{ id: 1, name: "Shady Lane Curtain", url: "/products/shady-lane" },
+	{ id: 2, name: "Fans", url: "/products/Fans" },
+	{
+		id: 3,
+		name: "Auto Vent Controllers",
+		url: "/products/Auto%20Vent%20Controllers",
+	},
+];
+
 export default function Header() {
 	const navigate = useNavigate();
-
-	const handleProductClick = (productId) => {
-		navigate(`/productshop?highlight=${productId}`);
-		handleClose();
-		setSearchTerm("");
-		setFilteredProducts([]);
-	};
-
 	const [expanded, setExpanded] = useState(false);
-	const location = useLocation();
-	const isHomePage = location.pathname === "/";
-
-	const handleClose = () => setExpanded(false);
-
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filteredProducts, setFilteredProducts] = useState([]);
+	const [suggestedProducts, setSuggestedProducts] = useState([]);
+
+	const handleProductClick = (productUrl) => {
+		navigate(productUrl);
+		handleClose();
+		// setSearchTerm("
+		setFilteredProducts([]);
+		setSuggestedProducts([]);
+	};
+
+	const handleClose = () => setExpanded(false);
 
 	const handleSearch = (event) => {
 		const term = event.target.value;
 		setSearchTerm(term);
 		if (term) {
-			const filtered = productsData.filter(
-				(product) =>
-					product.name.toLowerCase().includes(term.toLowerCase()) ||
-					product.description
-						.toLowerCase()
-						.includes(term.toLowerCase())
+			const filtered = productsData.filter((product) =>
+				product.name.toLowerCase().includes(term.toLowerCase())
 			);
 			setFilteredProducts(filtered);
 		} else {
@@ -50,32 +71,19 @@ export default function Header() {
 		}
 	};
 
+	// Show default suggestions when the search bar is focused
+	const handleFocus = () => {
+		if (!searchTerm) {
+			setSuggestedProducts(defaultSuggestions);
+		}
+	};
+
 	const handleBlur = () => {
 		setTimeout(() => {
 			setSearchTerm("");
 			setFilteredProducts([]);
+			setSuggestedProducts([]);
 		}, 100);
-	};
-
-	const highlightText = (text, highlight, maxLength = null) => {
-		if (!highlight) return text;
-
-		if (maxLength && text.length > maxLength) {
-			text = text.substring(0, maxLength) + "...";
-		}
-
-		const regex = new RegExp(`(${highlight})`, "gi");
-		const parts = text.split(regex);
-
-		return parts.map((part, index) =>
-			regex.test(part) ? (
-				<span key={index} className="highlight">
-					{part}
-				</span>
-			) : (
-				part
-			)
-		);
 	};
 
 	return (
@@ -176,6 +184,7 @@ export default function Header() {
 												aria-label="Search"
 												value={searchTerm}
 												onChange={handleSearch}
+												onFocus={handleFocus}
 												onBlur={handleBlur}
 												className="search-input"
 											/>
@@ -187,7 +196,8 @@ export default function Header() {
 											</Button>
 										</Form>
 
-										{searchTerm && (
+										{(searchTerm ||
+											suggestedProducts.length > 0) && (
 											<div className="search-results">
 												{filteredProducts.length > 0 ? (
 													filteredProducts.map(
@@ -197,30 +207,36 @@ export default function Header() {
 																className="product-item"
 																onClick={() =>
 																	handleProductClick(
-																		product.id
+																		product.url
 																	)
 																}
 															>
 																<h4 className="text-end">
-																	{highlightText(
-																		product.name,
-																		searchTerm
-																	)}
+																	{
+																		product.name
+																	}
 																</h4>
-																<p className="text-end">
-																	{window.innerWidth <=
-																	767
-																		? highlightText(
-																				product.description,
-																				searchTerm,
-																				40
-																			)
-																		: highlightText(
-																				product.description,
-																				searchTerm,
-																				80
-																			)}
-																</p>
+															</div>
+														)
+													)
+												) : suggestedProducts.length >
+												  0 ? (
+													suggestedProducts.map(
+														(product) => (
+															<div
+																key={product.id}
+																className="product-item"
+																onClick={() =>
+																	handleProductClick(
+																		product.url
+																	)
+																}
+															>
+																<h4 className="text-end">
+																	{
+																		product.name
+																	}
+																</h4>
 															</div>
 														)
 													)

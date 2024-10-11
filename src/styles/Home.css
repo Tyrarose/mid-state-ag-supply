@@ -5,20 +5,9 @@
 
 .home-gradient {
 	background: linear-gradient(to right, #1645ff 0%, #006de9 77%);
-	height: 55vh;
-}
-
-.image-container {
-	position: relative;
-	width: 100%;
 	height: 100%;
-	overflow: hidden;
-}
-
-.featured {
-	width: auto;
-	height: 660px;
-	object-fit: cover;
+	align-items: stretch;
+	display: flex;
 }
 
 .home-title {
@@ -29,6 +18,14 @@
 	padding: 50px 0 20px;
 }
 
+.line {
+	background-color: white;
+	height: 2px;
+	width: 90%;
+	margin: auto;
+	z-index: 999999;
+}
+
 .content {
 	color: white;
 	font-family: "Malgun Gothic", sans-serif;
@@ -36,12 +33,49 @@
 	padding: 40px;
 }
 
-.line {
-	background-color: white;
-	height: 2px;
-	width: 90%;
-	margin: auto;
+.hero-image {
+	display: flex;
+	justify-content: flex-end; /* Align image to the right */
+	align-items: center; /* Vertically center the image */
 }
+
+.hero-image img {
+	width: auto;
+	height: 456px;
+}
+
+/* //////////////////////////// */
+
+.subhero-image {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: 10px;
+}
+
+.subhero-image img {
+	width: auto;
+	height: 240px;
+	margin-top: -26px;
+}
+
+/* //////////////////// */
+
+.emergency-container {
+	margin: 20px auto;
+}
+
+.ophours {
+	margin-left: 50px;
+}
+
+.emergency-words {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* //////////////////////// */
 
 .section2 {
 	padding: 20px 30px;
@@ -49,14 +83,7 @@
 }
 
 .emergency-content {
-	/* margin: 10px; */
 	padding-bottom: 20px;
-}
-
-.emergency {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .emergency-title {
@@ -149,42 +176,14 @@
 	margin: 5px;
 }
 
+.mobilecollage {
+	display: none;
+}
 /* Media query for phones */
 @media only screen and (max-width: 767px) {
-	.home-gradient {
-		height: 300px;
-	}
-
-	.home-title {
-		padding: 10px;
-	}
-	.home .content {
-		padding: 12px;
-	}
 	.line {
 		width: 60%;
 		margin: auto;
-	}
-
-	.overflow-wrapper {
-		position: relative;
-		overflow: hidden;
-		margin-left: -32px;
-	}
-
-	.featured {
-		height: 360px;
-		width: auto;
-	}
-
-	.image-container {
-		overflow: visible;
-	}
-
-	.featured {
-		height: 320px;
-		width: auto;
-		margin-left: 0;
 	}
 
 	.contact-item i {
@@ -207,23 +206,36 @@
 
 	.ophours {
 		width: 110px;
+		margin: 0px;
 	}
 
 	.logo-section img {
 		max-height: 40px;
 	}
 
-	.emergency-content {
-		display: flex;
-		align-items: center;
-		padding-bottom: 20px;
-		margin: auto;
+	.featured.hero-desktop {
+		display: none;
 	}
 
-	.emergency {
-		padding: 0;
-		flex: 1;
-		justify-content: center;
+	.hero-image img {
+		height: 240px;
+	}
+
+	.mobilecollage {
+		display: block;
+	}
+	.subhero-image {
+		display: none;
+	}
+	.emergency-words {
+		margin-left: 18px;
+	}
+	.content {
+		padding: 0px 20px;
+		padding-top: 20px;
+	}
+	.home-title {
+		padding: 20px 10px 0px !important;
 	}
 }
 

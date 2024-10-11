@@ -104,8 +104,8 @@ function SeccoChimneys() {
 			</div>
 			{/* Scroll to Top Button */}
 			{isVisible && (
-				<button className="scroll-to-top" onClick={scrollToTop}>
-					Scroll to Top
+				<button onClick={scrollToTop} className="scroll-to-top">
+					<i className="fas fa-arrow-up"></i> Scroll to Top
 				</button>
 			)}
 		</section>

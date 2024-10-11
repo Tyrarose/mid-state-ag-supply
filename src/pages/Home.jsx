@@ -5,13 +5,15 @@ import "../styles/Home.css";
 function Home() {
 	return (
 		<div>
-			<section className="home-gradient">
-				<div className="home-gradient-content">
-					<div className="row text-center">
-						<div className="home col-6">
-							<h2 className="home-title">OUR MISSION</h2>
+			<section className="">
+				<div className="">
+					<div className="home-gradient">
+						<div className="home-mission col-lg-7 ">
+							<h2 className="home-title text-center">
+								OUR MISSION
+							</h2>
 							<div className="line"></div>
-							<p className="content">
+							<p className="content text-center">
 								Mid-State Ag Supply LLC is dedicated to
 								improving farm productivity and animal comfort
 								through expertly designed and installed
@@ -21,36 +23,63 @@ function Home() {
 								streamlined operations for farmers.
 							</p>
 						</div>
-						<div className="col-6">
-							<div className="overflow-wrapper">
-								<div className="image-container">
-									<img
-										className="featured"
-										src={
-											process.env.PUBLIC_URL +
-											"/images/tablet.png"
-										}
-										alt="tablet"
-									/>
-								</div>
-							</div>
+						<div className="hero-image col-lg-5">
+							<img
+								className="featured hero-desktop"
+								src={
+									process.env.PUBLIC_URL +
+									"/images/hero-desktop (1).png"
+								}
+								alt="tablet"
+							/>
+							<img
+								className="mobilecollage"
+								src={
+									process.env.PUBLIC_URL +
+									"/images/hero-mobilecollage.png"
+								}
+								alt="tablet"
+							/>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section className="section2">
-				<div className="row emergency-content">
-					<img
-						className="ophours"
-						src={process.env.PUBLIC_URL + "/images/24-7.png"}
-						alt="24/7"
-					/>
-					<div className="col-lg-4 emergency">
-						<h1 className="emergency-title">EMERGENCY</h1>
-						<h2 className="emergency-subtitle">SERVICE</h2>
+			<section className="">
+				<div className="d-flex">
+					<div className="emergency-container col-lg-7 col-sm-12 d-flex">
+						<img
+							className="ophours"
+							src={process.env.PUBLIC_URL + "/images/24-7.png"}
+							alt="24/7"
+						/>
+						<div className="col-lg-4 emergency-words">
+							<h1 className="emergency-title">EMERGENCY</h1>
+							<h2 className="emergency-subtitle">SERVICE</h2>
+						</div>
+					</div>
+					<div className="subhero-image">
+						<img
+							className="featured"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/hero-desktop (2).png"
+							}
+							alt="tablet"
+						/>
+						<img
+							className="featured"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/hero-desktop (3).png"
+							}
+							alt="tablet"
+						/>
 					</div>
 				</div>
+			</section>
+
+			<section className="section2">
 				<div className="row ">
 					<div className="col-lg-6">
 						<div className="contact-info">

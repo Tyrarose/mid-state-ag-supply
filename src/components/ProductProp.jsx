@@ -63,7 +63,7 @@ function ProductProp() {
 			{/* Scroll to Top Button */}
 			{isVisible && (
 				<button onClick={scrollToTop} className="scroll-to-top">
-					Scroll to Top
+					<i className="fas fa-arrow-up"></i> Scroll to Top
 				</button>
 			)}
 		</section>

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import productsData from "../../data/shadylane.json";
 
+import "../../styles/productsIndivPage.css";
+
 function ShadyLane() {
 	const products = productsData;
 	const { productName } = useParams();
@@ -89,7 +91,7 @@ function ShadyLane() {
 			</div>
 			{isVisible && (
 				<button onClick={scrollToTop} className="scroll-to-top">
-					Scroll to Top
+					<i className="fas fa-arrow-up"></i> Scroll to Top
 				</button>
 			)}
 		</section>
