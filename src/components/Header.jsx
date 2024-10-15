@@ -150,19 +150,7 @@ export default function Header() {
 											PRODUCTS
 										</NavLink>
 									</NavItem>
-									<NavItem>
-										<NavLink
-											to="/contactus"
-											className={({ isActive }) =>
-												isActive
-													? "nav-link active-link"
-													: "nav-link"
-											}
-											onClick={handleClose}
-										>
-											CONTACT US
-										</NavLink>
-									</NavItem>
+
 									<NavItem>
 										<NavLink
 											to="/gallery"

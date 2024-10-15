@@ -8,7 +8,7 @@ function Home() {
 			<section className="">
 				<div className="">
 					<div className="home-gradient">
-						<div className="home-mission col-lg-7 ">
+						<div className="home-mission col-6 ">
 							<h2 className="home-title text-center">
 								OUR MISSION
 							</h2>
@@ -23,7 +23,7 @@ function Home() {
 								streamlined operations for farmers.
 							</p>
 						</div>
-						<div className="hero-image col-lg-5">
+						<div className="hero-image col-6">
 							<img
 								className="featured hero-desktop"
 								src={
@@ -47,7 +47,7 @@ function Home() {
 
 			<section className="">
 				<div className="d-flex">
-					<div className="emergency-container col-lg-7 col-sm-12 d-flex">
+					<div className="emergency-container col-md-6 col-sm-12">
 						<img
 							className="ophours"
 							src={process.env.PUBLIC_URL + "/images/24-7.png"}
@@ -58,7 +58,7 @@ function Home() {
 							<h2 className="emergency-subtitle">SERVICE</h2>
 						</div>
 					</div>
-					<div className="subhero-image">
+					<div className="subhero-image col-6 ">
 						<img
 							className="featured"
 							src={
@@ -81,9 +81,9 @@ function Home() {
 
 			<section className="section2">
 				<div className="row ">
-					<div className="col-lg-6">
+					<div className="col-lg-7 col-sm-12 calls">
 						<div className="contact-info">
-							<div className="col-lg-6 col-md-12">
+							<div className="col-md-5 col-sm-12">
 								<div className="contact-item">
 									<i className="fa-solid fa-clock box"></i>
 									<div className="contact-text">
@@ -102,7 +102,7 @@ function Home() {
 									</h6>
 								</div>
 							</div>
-							<div className="col-lg-7 col-md-12">
+							<div className="col-md-7 col-sm-12">
 								<div className="contact-item">
 									<i className="fa-solid fa-envelope box"></i>
 									<h6>
@@ -123,8 +123,8 @@ function Home() {
 						</div>
 					</div>
 
-					<div className="col-lg-6">
-						<div className="col-lg-12 logo-section">
+					<div className="col-lg-5 col-sm-12  logo-section">
+						<div className="col-lg-12">
 							<img
 								src={
 									process.env.PUBLIC_URL +

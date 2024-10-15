@@ -1,13 +1,12 @@
-/* Global styles */
-* {
-	/* border: 1px red dotted; */
-}
-
 .home-gradient {
 	background: linear-gradient(to right, #1645ff 0%, #006de9 77%);
 	height: 100%;
 	align-items: stretch;
 	display: flex;
+}
+
+.home-mission {
+	margin: auto;
 }
 
 .home-title {
@@ -33,46 +32,48 @@
 	padding: 40px;
 }
 
+/* //////////////////////////// */
+
 .hero-image {
 	display: flex;
-	justify-content: flex-end; /* Align image to the right */
-	align-items: center; /* Vertically center the image */
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
 }
 
 .hero-image img {
-	width: auto;
-	height: 456px;
+	height: 100%;
+	width: 100%;
 }
-
-/* //////////////////////////// */
 
 .subhero-image {
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
-	margin-left: 10px;
+	align-items: top;
+	overflow: hidden;
 }
 
 .subhero-image img {
-	width: auto;
-	height: 240px;
-	margin-top: -26px;
+	width: 100%;
 }
 
 /* //////////////////// */
 
 .emergency-container {
-	margin: 20px auto;
+	display: flex;
+	align-items: center;
 }
 
 .ophours {
-	margin-left: 50px;
+	margin-left: 2vw;
+	width: 10vw;
 }
 
 .emergency-words {
-	margin-left: 40px;
+	margin-left: 2vw;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 /* //////////////////////// */
@@ -89,18 +90,15 @@
 .emergency-title {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: clamp(32px, 2.8vw, 80px);
+	font-size: clamp(40px, 2.3vw, 50px);
 }
 
 .emergency-subtitle {
 	font-family: "Malgun Gothic", sans-serif;
 	font-weight: bold;
-	font-size: clamp(22px, 2vw, 55px);
 	letter-spacing: 7px;
-}
 
-.ophours {
-	width: 200px;
+	font-size: clamp(30px, 2vw, 60px);
 }
 
 .service-title {
@@ -110,9 +108,9 @@
 }
 
 .box {
-	width: 45px; /* Consolidated width */
+	width: 45px;
 	border: 2px black solid;
-	padding: 8px; /* Consolidated padding */
+	padding: 8px;
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
@@ -128,14 +126,15 @@
 	display: flex;
 	flex-direction: row;
 	font-family: "Inter", sans-serif;
-	margin: 30px;
+	margin: 5px;
 }
 
 .contact-item {
 	display: flex;
-	align-items: center; /* Center items vertically */
-	gap: 18px;
+	align-items: center;
+	gap: 5px;
 	padding-bottom: 20px;
+	margin: 0px;
 }
 
 .contact-item i {
@@ -169,6 +168,8 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
+	margin: auto;
+	text-align: center;
 }
 
 .logo-section img {
@@ -179,6 +180,13 @@
 .mobilecollage {
 	display: none;
 }
+
+/* ////////////// */
+
+* {
+	/* border: 1px red dotted; */
+}
+
 /* Media query for phones */
 @media only screen and (max-width: 767px) {
 	.line {
@@ -189,10 +197,18 @@
 	.contact-item i {
 		font-size: 16px;
 	}
+	.emergency-container {
+		margin: 10px;
+	}
 
 	.box {
 		width: 34px;
 		padding: 6px;
+	}
+
+	.calls {
+		border: 2px black solid;
+		border-radius: 16px;
 	}
 
 	.contact-info {
@@ -209,6 +225,10 @@
 		margin: 0px;
 	}
 
+	.logo-section {
+		margin-top: 15px;
+	}
+
 	.logo-section img {
 		max-height: 40px;
 	}
@@ -218,7 +238,7 @@
 	}
 
 	.hero-image img {
-		height: 240px;
+		height: 100%;
 	}
 
 	.mobilecollage {
@@ -236,52 +256,5 @@
 	}
 	.home-title {
 		padding: 20px 10px 0px !important;
-	}
-}
-
-/* Media query for tablets (medium screens) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-	.ophours {
-		width: 160px;
-	}
-	.contact-info {
-		margin: 5px;
-		flex-direction: column;
-	}
-	.contact-item i {
-		font-size: 16px;
-		text-align: center;
-	}
-	.featured {
-		height: 480px;
-	}
-}
-
-/* Media query for small desktops (large screens) */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-	.home-gradient {
-		height: 44vh;
-	}
-}
-
-/* Media query for large desktops (extra-large screens) */
-@media only screen and (min-width: 1441px) {
-	.home-gradient {
-		height: 50vh;
-	}
-	.emergency-content {
-		margin-left: 120px;
-	}
-	.ophours {
-		width: 220px;
-	}
-	.emergency-title {
-		font-size: 60px;
-	}
-	.emergency-subtitle {
-		font-size: 52px;
-	}
-	.emergency {
-		margin-left: 20px;
 	}
 }
