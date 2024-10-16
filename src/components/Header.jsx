@@ -51,7 +51,6 @@ export default function Header() {
 	const handleProductClick = (productUrl) => {
 		navigate(productUrl);
 		handleClose();
-		// setSearchTerm("
 		setFilteredProducts([]);
 		setSuggestedProducts([]);
 	};
@@ -83,7 +82,7 @@ export default function Header() {
 			setSearchTerm("");
 			setFilteredProducts([]);
 			setSuggestedProducts([]);
-		}, 100);
+		}, 300);
 	};
 
 	return (
