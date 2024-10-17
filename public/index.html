@@ -7,8 +7,22 @@
 		<meta name="theme-color" content="#000000" />
 		<meta
 			name="description"
-			content="Web site created using create-react-app"
+			content="Mid-State AG Supply offers top-quality farm equipment, ventilation systems, barn curtains, and agricultural solutions to improve farm productivity and animal comfort."
 		/>
+
+		<!-- Open Graph Meta Tags for Social Media Sharing -->
+		<meta
+			property="og:title"
+			content="Mid-State AG Supply | Farm Equipment & Agricultural Solutions"
+		/>
+		<meta
+			property="og:description"
+			content="Offering top-quality farm equipment, ventilation systems, barn curtains, and more."
+		/>
+		<meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+		<meta property="og:url" content="https://midstateagsupply.com" />
+		<meta property="og:type" content="website" />
+
 		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 		<!--
       manifest.json provides metadata used when your web app is installed on a
@@ -30,6 +44,22 @@
 		/>
 
 		<title>Mid-state AG Supply</title>
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Mid-State AG Supply",
+				"url": "https://midstateagsupply.com",
+				"logo": "%PUBLIC_URL%/logo192.png",
+				"description": "We provide top-quality farm equipment, ventilation systems, and agricultural solutions.",
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+1-555-555-5555",
+					"contactType": "Customer Support"
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
